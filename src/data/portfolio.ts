@@ -17,10 +17,10 @@ export const portfolioCategories: PortfolioCategory[] = [
   { id: 'all', label: 'All' },
   { id: 'wedding', label: 'Wedding' },
   { id: 'pre-wedding', label: 'Pre-Wedding' },
-  { id: 'haldi', label: 'Haldi' },
+  { id: 'engagement', label: 'Engagement' },
   { id: 'mehendi', label: 'Mehendi' },
   { id: 'reception', label: 'Reception' },
-  { id: 'engagement', label: 'Engagement' },
+  { id: 'haldi', label: 'Haldi' },
   { id: 'baby', label: 'Baby' },
   { id: 'birthday', label: 'Birthday' },
   { id: 'maternity', label: 'Maternity' },
@@ -33,56 +33,38 @@ export const portfolioCategories: PortfolioCategory[] = [
   { id: 'events', label: 'Events' },
 ]
 
-// Replace image URLs below with your actual studio photos
-// Format: { id, category, title, image: '/photos/category/filename.jpg', width, height, alt }
 export const portfolioItems: PortfolioItem[] = [
-  // Indian Weddings
-  { id: '1',  category: 'wedding',    title: 'Indian Wedding Ceremony',   image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80', width: 800, height: 1100, alt: 'Indian wedding ceremony photography' },
-  { id: '2',  category: 'wedding',    title: 'Bridal Portrait',           image: 'https://images.unsplash.com/photo-1617981408259-b8f8e64891f1?w=800&q=80', width: 800, height: 1000, alt: 'Indian bridal portrait photography' },
-  { id: '3',  category: 'wedding',    title: 'Wedding Rituals',           image: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80', width: 800, height: 600,  alt: 'Indian wedding rituals photography' },
-  { id: '4',  category: 'wedding',    title: 'Bride & Groom',             image: 'https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=800&q=80', width: 800, height: 1100, alt: 'Indian bride and groom photography' },
-  { id: '5',  category: 'wedding',    title: 'Wedding Mandap',            image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80', width: 800, height: 700,  alt: 'Wedding mandap decoration' },
-
-  // Mehendi
-  { id: '6',  category: 'mehendi',   title: 'Bridal Mehendi',            image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=800&q=80', width: 800, height: 1200, alt: 'Bridal mehendi photography' },
-  { id: '7',  category: 'mehendi',   title: 'Mehendi Close-Up',          image: 'https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=800&q=80', width: 800, height: 800,  alt: 'Mehendi close-up photography' },
-
-  // Haldi
-  { id: '8',  category: 'haldi',     title: 'Haldi Ceremony',            image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80', width: 800, height: 800,  alt: 'Haldi ceremony photography' },
+  // Weddings
+  { id: '15', category: 'wedding',     title: 'Royal Sikh Wedding',          image: '/photos/15.jpg',  width: 800, height: 1000, alt: 'Sikh bride and groom on grand staircase' },
+  { id: '16', category: 'wedding',     title: 'Hindu Wedding Ceremony',      image: '/photos/16.jpg',  width: 800, height: 700,  alt: 'Hindu couple at floral mandap' },
+  { id: '19', category: 'wedding',     title: 'Gurudwara Anand Karaj',       image: '/photos/19.jpg',  width: 800, height: 1100, alt: 'Sikh wedding ceremony at Gurudwara' },
+  { id: '22', category: 'wedding',     title: 'Jaymala Ceremony',            image: '/photos/22.jpg',  width: 800, height: 700,  alt: 'Bride and groom exchanging garlands' },
+  { id: '20', category: 'wedding',     title: 'Outdoor Wedding Portrait',    image: '/photos/20.jpg',  width: 800, height: 1100, alt: 'Couple under tree at wedding venue' },
+  { id: '27', category: 'wedding',     title: 'Wedding Night Portrait',      image: '/photos/27.jpg',  width: 800, height: 900,  alt: 'Couple at outdoor night wedding' },
 
   // Pre-Wedding
-  { id: '9',  category: 'pre-wedding', title: 'Romantic Pre-Wedding',    image: 'https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=800&q=80', width: 800, height: 1000, alt: 'Pre-wedding romantic shoot' },
-  { id: '10', category: 'pre-wedding', title: 'Golden Hour Shoot',       image: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80', width: 800, height: 800,  alt: 'Pre-wedding golden hour photography' },
-  { id: '11', category: 'pre-wedding', title: 'Couple Portrait',         image: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800&q=80', width: 800, height: 900,  alt: 'Couple pre-wedding portrait' },
-
-  // Reception
-  { id: '12', category: 'reception', title: 'Reception Night',           image: 'https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=800&q=80', width: 800, height: 900,  alt: 'Wedding reception photography' },
+  { id: '9',  category: 'pre-wedding', title: 'Smoke Bomb Shoot',            image: '/photos/9.jpg',   width: 800, height: 900,  alt: 'Couple with colorful smoke bombs' },
+  { id: '1',  category: 'pre-wedding', title: 'Suspension Bridge Romance',   image: '/photos/1.jpg',   width: 800, height: 600,  alt: 'Couple walking on suspension bridge' },
+  { id: '5',  category: 'pre-wedding', title: 'Heritage Location Shoot',     image: '/photos/5.jpg',   width: 800, height: 1000, alt: 'Couple at red Indian heritage structure' },
+  { id: '6',  category: 'pre-wedding', title: 'Lakeside Pre-Wedding',        image: '/photos/6.jpg',   width: 800, height: 1100, alt: 'Sikh couple at lakeside' },
+  { id: '2',  category: 'pre-wedding', title: 'Royal Enfield Shoot',         image: '/photos/2.jpg',   width: 800, height: 600,  alt: 'Couple on Royal Enfield motorcycle' },
+  { id: '4',  category: 'pre-wedding', title: 'Groom in the Air',            image: '/photos/4.jpg',   width: 800, height: 900,  alt: 'Sikh groom jumping with bride' },
+  { id: '8',  category: 'pre-wedding', title: 'Ancient Ruins Shoot',         image: '/photos/8.jpg',   width: 800, height: 700,  alt: 'Couple at ancient ruins' },
+  { id: '10', category: 'pre-wedding', title: 'Mountain Adventure Shoot',    image: '/photos/10.jpg',  width: 800, height: 700,  alt: 'Couple in Jeep with prayer flags' },
+  { id: '3',  category: 'pre-wedding', title: 'Creative Pre-Wedding',        image: '/photos/3.jpg',   width: 800, height: 900,  alt: 'Couple with red phone booth' },
 
   // Engagement
-  { id: '13', category: 'engagement', title: 'Engagement Ceremony',      image: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&q=80', width: 800, height: 600,  alt: 'Engagement ceremony photography' },
+  { id: '7',  category: 'engagement',  title: 'Sky Lantern Proposal',        image: '/photos/7.jpg',   width: 800, height: 600,  alt: 'Romantic proposal with sky lanterns at night' },
+  { id: '11', category: 'engagement',  title: 'Heritage Proposal',           image: '/photos/11.jpg',  width: 800, height: 1100, alt: 'Groom kneeling at heritage monument' },
+  { id: '18', category: 'engagement',  title: 'Ring Ceremony',               image: '/photos/18.jpg',  width: 800, height: 700,  alt: 'Couple holding engagement rings' },
 
-  // Baby
-  { id: '14', category: 'baby',      title: 'Newborn Session',           image: 'https://images.unsplash.com/photo-1519689373023-dd07c7988603?w=800&q=80', width: 800, height: 800,  alt: 'Newborn baby photography' },
-  { id: '15', category: 'baby',      title: 'First Birthday',            image: 'https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=800&q=80', width: 800, height: 900,  alt: 'First birthday photography' },
+  // Mehendi
+  { id: '12', category: 'mehendi',     title: 'Bridal Mehendi Details',      image: '/photos/12.jpg',  width: 800, height: 1000, alt: 'Bride close-up with mehendi and bridal lehenga' },
+  { id: '14', category: 'mehendi',     title: 'Wedding Rings & Mehendi',     image: '/photos/14.jpg',  width: 800, height: 800,  alt: 'Couple hands with mehendi and wedding rings' },
 
-  // Maternity
-  { id: '16', category: 'maternity', title: 'Maternity Glow',            image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80', width: 800, height: 1100, alt: 'Maternity photography' },
-
-  // Traditional
-  { id: '17', category: 'traditional', title: 'Traditional Attire',      image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80', width: 800, height: 1100, alt: 'Traditional Indian photography' },
-
-  // Studio
-  { id: '18', category: 'studio',    title: 'Studio Portrait',           image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80', width: 800, height: 1000, alt: 'Studio portrait photography' },
-
-  // Family
-  { id: '19', category: 'family',    title: 'Family Portrait',           image: 'https://images.unsplash.com/photo-1581952976147-5a2d15560349?w=800&q=80', width: 800, height: 600,  alt: 'Family portrait photography' },
-
-  // Corporate
-  { id: '20', category: 'corporate', title: 'Corporate Portrait',        image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80', width: 800, height: 700,  alt: 'Corporate photography' },
-
-  // Events
-  { id: '21', category: 'events',    title: 'Event Coverage',            image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80', width: 800, height: 600,  alt: 'Event photography' },
-
-  // Birthday
-  { id: '22', category: 'birthday',  title: 'Birthday Celebration',      image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80', width: 800, height: 800,  alt: 'Birthday photography' },
+  // Detail shots
+  { id: '21', category: 'traditional', title: 'Groom\'s Gold Sword',         image: '/photos/21.jpg',  width: 800, height: 700,  alt: 'Groom holding ceremonial gold sword' },
+  { id: '24', category: 'wedding',     title: 'Sikh Wedding Portrait',       image: '/photos/24.jpg',  width: 800, height: 1000, alt: 'Sikh bride and groom full portrait' },
+  { id: '26', category: 'wedding',     title: 'Sikh Couple Close-Up',        image: '/photos/26.jpg',  width: 800, height: 1000, alt: 'Sikh couple romantic close-up portrait' },
+  { id: '28', category: 'wedding',     title: 'Outdoor Wedding',             image: '/photos/28.jpg',  width: 800, height: 1000, alt: 'Couple at outdoor wedding ceremony' },
 ]

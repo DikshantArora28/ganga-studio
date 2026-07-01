@@ -9,31 +9,31 @@ import { siteConfig } from '@/data/config'
 const slides = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1920&q=80',
+    image: '/photos/9.jpg',
     headline: 'Capturing Moments.',
     subheadline: 'Creating Memories Forever.',
-    tag: 'Indian Wedding Photography',
+    tag: 'Pre-Wedding Photography',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1920&q=80',
+    image: '/photos/16.jpg',
     headline: 'Every Ritual,',
     subheadline: 'Beautifully Preserved.',
     tag: 'Wedding Ceremonies',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=1920&q=80',
+    image: '/photos/6.jpg',
     headline: 'Love Stories',
     subheadline: 'Told Through Our Lens.',
     tag: 'Bridal Photography',
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=1920&q=80',
-    headline: 'Glowing Moments',
-    subheadline: 'Beautifully Preserved.',
-    tag: 'Maternity Photography',
+    image: '/photos/7.jpg',
+    headline: 'Magical Moments',
+    subheadline: 'Beautifully Framed.',
+    tag: 'Engagement Photography',
   },
 ]
 

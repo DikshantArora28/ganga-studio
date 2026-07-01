@@ -36,7 +36,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-3xl overflow-hidden aspect-[4/5] max-w-lg mx-auto lg:mx-0">
               <Image
-                src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80"
+                src="/photos/15.jpg"
                 alt="Ganga Studio — Professional Photography"
                 fill
                 className="object-cover"
