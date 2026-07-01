@@ -114,16 +114,20 @@ export default function PortfolioSection() {
           </div>
         )}
 
-        {/* Upload instruction note */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.5 }}
           className="mt-10 text-center"
         >
-          <p className="text-white/30 text-xs">
-            To add your photos, simply add entries to <code className="text-gold/60">src/data/portfolio.ts</code>
-          </p>
+          <a
+            href="https://wa.me/919711384088?text=Hi,%20I%20visited%20your%20website%20and%20have%20a%20photoshoot%20requirement."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-gold/60 text-sm hover:text-gold transition-colors duration-300"
+          >
+            Want to see more work? <span className="underline underline-offset-2">Contact us on WhatsApp</span> →
+          </a>
         </motion.div>
       </div>
 
