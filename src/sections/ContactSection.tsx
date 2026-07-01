@@ -109,12 +109,18 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Map placeholder */}
-            <div className="rounded-2xl overflow-hidden glass h-48 flex items-center justify-center border border-gold/10">
-              <div className="text-center text-white/30">
-                <FiMapPin size={32} className="mx-auto mb-2 text-gold/30" />
-                <p className="text-sm">Google Map — Add your embed URL in config</p>
-              </div>
+            {/* Google Map */}
+            <div className="rounded-2xl overflow-hidden h-56 border border-gold/10">
+              <iframe
+                src={siteConfig.mapEmbedUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ganga Studio & Cyber Cafe Location"
+              />
             </div>
           </motion.div>
 
