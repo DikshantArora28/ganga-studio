@@ -1,0 +1,8 @@
+export const testimonials = [
+  { id: 1, name: 'Priya Sharma', role: 'Bride', rating: 5, text: 'Sanjeev ji captured our wedding so beautifully! Every moment, every emotion was perfectly preserved. The photos are absolutely stunning. We are truly grateful for this precious gift.', image: null, date: 'March 2024' },
+  { id: 2, name: 'Rahul & Anjali', role: 'Couple', rating: 5, text: 'Our pre-wedding shoot was a dream come true. The team was so professional and creative. They made us feel so comfortable and the results were beyond our expectations!', image: null, date: 'February 2024' },
+  { id: 3, name: 'Sunita Mehta', role: 'Mother', rating: 5, text: 'Got my baby\'s photoshoot done here. The setup was so cute and professional. My little one\'s photos came out so beautiful. Highly recommend Ganga Studio!', image: null, date: 'January 2024' },
+  { id: 4, name: 'Vikram Singh', role: 'Corporate Client', rating: 5, text: 'Excellent service for our company\'s team photoshoot. Very professional, timely, and the photos were delivered quickly. Great cyber cafe services too!', image: null, date: 'December 2023' },
+  { id: 5, name: 'Meena Agarwal', role: 'Customer', rating: 5, text: 'Used their cyber cafe for passport form filling and photo. Very helpful staff, quick service, and the passport photos came out perfectly. Will definitely come back!', image: null, date: 'November 2023' },
+  { id: 6, name: 'Deepak Verma', role: 'Groom', rating: 5, text: 'Amazing wedding photography! Sanjeev ji has a great eye for candid shots. Our wedding album is something we will treasure for generations. Thank you so much!', image: null, date: 'October 2023' },
+]
