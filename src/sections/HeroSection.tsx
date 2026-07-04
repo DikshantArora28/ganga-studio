@@ -10,6 +10,7 @@ const slides = [
   {
     id: 1,
     image: '/photos/9.jpg',
+    imagePosition: '60% center',   // smoke bombs couple — shift right, text left stays clear
     headline: 'Capturing Moments.',
     subheadline: 'Creating Memories Forever.',
     tag: 'Pre-Wedding Photography',
@@ -17,6 +18,7 @@ const slides = [
   {
     id: 2,
     image: '/photos/16.jpg',
+    imagePosition: '72% center',   // Hindu mandap couple — push couple to right so faces show beside text
     headline: 'Every Ritual,',
     subheadline: 'Beautifully Preserved.',
     tag: 'Wedding Ceremonies',
@@ -24,6 +26,7 @@ const slides = [
   {
     id: 3,
     image: '/photos/6.jpg',
+    imagePosition: '65% center',   // Sikh lakeside — couple shifts right of text
     headline: 'Love Stories',
     subheadline: 'Told Through Our Lens.',
     tag: 'Bridal Photography',
@@ -31,6 +34,7 @@ const slides = [
   {
     id: 4,
     image: '/photos/7.jpg',
+    imagePosition: 'center center', // sky lanterns proposal — wide scene, center fine
     headline: 'Magical Moments',
     subheadline: 'Beautifully Framed.',
     tag: 'Engagement Photography',
@@ -75,19 +79,21 @@ export default function HeroSection() {
             fill
             priority={current === 0}
             className="object-cover"
+            style={{ objectPosition: slide.imagePosition }}
             sizes="100vw"
             quality={90}
           />
         </motion.div>
       </AnimatePresence>
 
-      {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />
+      {/* Dark Gradient Overlay — stronger on left so text stays readable, right shows the couple */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/75" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/20 to-transparent" />
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+      {/* Content — pt-24 on outer container pushes everything well below the fixed navbar */}
+      <div className="relative z-10 h-full flex flex-col justify-center pt-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           {/* Tag Badge */}
           <AnimatePresence mode="wait">
             <motion.div
@@ -96,7 +102,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.5 }}
-              className="mb-6"
+              className="mb-5"
             >
               <span className="inline-block px-4 py-1.5 bg-gold/20 border border-gold/40 text-gold text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase rounded-full backdrop-blur-sm">
                 {slide.tag}
@@ -113,11 +119,11 @@ export default function HeroSection() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h1 className="font-playfair font-bold text-white leading-tight">
-                <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+              <h1 className="font-playfair font-bold text-white leading-tight max-w-2xl">
+                <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
                   {slide.headline}
                 </span>
-                <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl shimmer-text mt-2">
+                <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl shimmer-text mt-1">
                   {slide.subheadline}
                 </span>
               </h1>
@@ -129,7 +135,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="mt-6 text-white/70 text-sm sm:text-base lg:text-lg max-w-xl leading-relaxed"
+            className="mt-5 text-white/70 text-sm sm:text-base max-w-md leading-relaxed"
           >
             Professional photography studio & cyber cafe — where artistry meets precision.
             Led by <strong className="text-gold font-semibold">Sanjeev Arora</strong>.
@@ -140,7 +146,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
-            className="mt-6 flex flex-wrap gap-2"
+            className="mt-4 flex flex-wrap gap-2"
           >
             {services.slice(0, 5).map((s) => (
               <span
@@ -160,20 +166,20 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6 }}
-            className="mt-8 flex flex-col sm:flex-row gap-4"
+            className="mt-6 flex flex-col sm:flex-row gap-4"
           >
             <a
               href={siteConfig.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-gold text-primary font-bold px-8 py-4 rounded-full hover:bg-gold-light hover:shadow-xl hover:shadow-gold/30 hover:-translate-y-1 transition-all duration-300 text-base"
+              className="inline-flex items-center justify-center gap-3 bg-gold text-primary font-bold px-8 py-3.5 rounded-full hover:bg-gold-light hover:shadow-xl hover:shadow-gold/30 hover:-translate-y-1 transition-all duration-300 text-base"
             >
               <FaWhatsapp size={20} />
               Book Your Shoot
             </a>
             <a
               href="#portfolio"
-              className="inline-flex items-center justify-center gap-3 border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-full hover:border-gold hover:text-gold backdrop-blur-sm transition-all duration-300 text-base"
+              className="inline-flex items-center justify-center gap-3 border-2 border-white/30 text-white font-semibold px-8 py-3.5 rounded-full hover:border-gold hover:text-gold backdrop-blur-sm transition-all duration-300 text-base"
             >
               <FaPlay size={14} />
               View Portfolio
@@ -182,26 +188,29 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Slide Dots */}
-      <div className="absolute bottom-16 left-1/2 -translate-x-1/2 z-10 flex gap-2">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => { setPrev(current); setCurrent(i) }}
-            className={`transition-all duration-300 rounded-full ${
-              i === current ? 'w-8 h-2 bg-gold' : 'w-2 h-2 bg-white/40 hover:bg-white/60'
-            }`}
-            aria-label={`Slide ${i + 1}`}
-          />
-        ))}
+      {/* Bottom bar — dots centered, scroll on right — no overlap */}
+      <div className="absolute bottom-6 left-0 right-0 z-10 flex items-center justify-center px-8">
+        {/* Slide Dots — centered */}
+        <div className="flex gap-2">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => { setPrev(current); setCurrent(i) }}
+              className={`transition-all duration-300 rounded-full ${
+                i === current ? 'w-8 h-2 bg-gold' : 'w-2 h-2 bg-white/40 hover:bg-white/60'
+              }`}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
+        </div>
       </div>
 
-      {/* Scroll Down */}
+      {/* Scroll Down — right side, no conflict with dots */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/40 hover:text-gold transition-colors cursor-pointer"
+        className="absolute bottom-5 right-8 z-10 flex flex-col items-center gap-1 text-white/40 hover:text-gold transition-colors cursor-pointer hidden sm:flex"
         onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
       >
         <span className="text-[10px] tracking-[0.2em] uppercase">Scroll</span>
